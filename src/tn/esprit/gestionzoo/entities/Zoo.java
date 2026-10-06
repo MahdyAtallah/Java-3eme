@@ -89,9 +89,6 @@ public class Zoo {
         System.out.println("Animals: " + nbrAnimals);
     }
     public String toString() {
-        return "Zoo: " + name
-                + ", City: " + city
-                + ", Cages: " + nbrCages
-                + ", Animals: " + nbrAnimals;
+        return "Zoo: " + name + ", City: " + city + ", Cages: " + nbrCages + ", Animals: " + nbrAnimals;
     }
 }

@@ -5,10 +5,10 @@ import tn.esprit.gestionzoo.entities.Zoo;
 
 public class Main {
     public static void main(String[] args) {
-        Animal lion = new Animal("Felidae", "Simba", 5, true);
-        Animal monkey = new Animal("lion", "Kiki", 3, true);
-        Animal parrot = new Animal("Bird", "Rio", 2, false);
-        Animal elephant = new Animal("Eleph", "Dumbo", 8, true);
+        Animal lion = new Animal("Cat", "Lion", 5, true);
+        Animal monkey = new Animal("Monkey", "Monkey", 3, true);
+        Animal parrot = new Animal("Bird", "Bird", 2, false);
+        Animal elephant = new Animal("Elephant", "Elephant", 8, true);
         Zoo zoo = new Zoo("MyZoo", "Tunis");
         System.out.println("=== add animals ===");
         System.out.println(zoo.addAnimal(lion));
@@ -19,11 +19,11 @@ public class Main {
         System.out.println("=== recherche ===");
         int result = zoo.searchAnimal(lion);
         System.out.println("Lion pos: " + result);
-        Animal newLion = new Animal("lion", "Simba", 5, true);
+        Animal newLion = new Animal("Cat", "Lion", 5, true);
         result = zoo.searchAnimal(newLion);
-        System.out.println("Second Simba pos: " + result);
+        System.out.println("Second Lion pos: " + result);
         System.out.println("=== Duplicate test ===");
-        System.out.println("Adding Simba again: " + zoo.addAnimal(newLion));
+        System.out.println("Adding Lion again: " + zoo.addAnimal(newLion));
         System.out.println("=== Adding another animal ===");
         System.out.println(zoo.addAnimal(elephant));
         System.out.println("=== Zoo information ===");
